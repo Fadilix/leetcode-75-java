@@ -1,7 +1,7 @@
 package GreatestCommonDivisorsOfStrings;
 
 /**
- * Bruteforce approach 
+ * Bruteforce approach
  * It is actually working
  **/
 class Bruteforce {
@@ -19,7 +19,7 @@ class Bruteforce {
 
     public static String gcdOfStrings(String str1, String str2) {
 
-        for (int i = Math.min(str1.length(), str2.length()); i > 0 ;--i) {
+        for (int i = Math.min(str1.length(), str2.length()); i > 0; --i) {
             if (valid(str1, str2, i)) {
                 return str1.substring(0, i);
             }
